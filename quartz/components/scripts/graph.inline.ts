@@ -206,7 +206,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const isCurrent = d.id === slug
     if (isCurrent) {
       return computedStyleMap["--secondary"]
-    } else if (/^Организации\//.test(d.id)) {
+    } else if (d.id.startsWith("NPCs/Организации/")) {
       return computedStyleMap["--c4"];
     } else if (d.tags.includes("race")) {
       return computedStyleMap["--c1"];
@@ -214,9 +214,9 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       return computedStyleMap["--c6"];
     } else if (d.tags.includes("player")) {
       return computedStyleMap["--c8"];
-    } else if (/^Items\//.test(d.id)) {
+    } else if (d.id.startsWith("Items/")) {
       return computedStyleMap["--c7"];
-    } else if (/^NPC\//.test(d.id)) {
+    } else if (d.id.startsWith("NPCs/")) {
       return computedStyleMap["--c5"];
     } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
