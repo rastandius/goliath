@@ -205,6 +205,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const color = (d: NodeData) => {
     const isCurrent = d.id === slug
     if (isCurrent) {
+      console.log(d.id)
       return computedStyleMap["--secondary"]
     } else if (d.id.startsWith("Goliaph/NPCs/Организации/")) {
       return computedStyleMap["--c4"];
