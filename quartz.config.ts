@@ -1,6 +1,5 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-import { HideObsidianPluginBlocks } from './quartz/plugins/transformers/hideObsidianPluginBlocks';
 
 /**
  * Quartz 4 Configuration
@@ -38,6 +37,14 @@ const config: QuartzConfig = {
           tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#fff23688",
+          c1: "#3db6e8",
+          c2: "#364954",
+          c3: "#99aebb",
+          c4: "#da94ca",
+          c5: "#a26094",
+          c6: "#f9f871",
+          c7: "#aff68b",
+          c8: "#ff868c",
         },
         darkMode: {
           light: "#161618",
@@ -49,6 +56,14 @@ const config: QuartzConfig = {
           tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#b3aa0288",
+          c1: "#3db6e8",
+          c2: "#364954",
+          c3: "#99aebb",
+          c4: "#da94ca",
+          c5: "#a26094",
+          c6: "#f9f871",
+          c7: "#aff68b",
+          c8: "#ff868c",
         },
       },
     },

@@ -8,6 +8,14 @@ export interface ColorScheme {
   tertiary: string
   highlight: string
   textHighlight: string
+  c1: string
+  c2: string
+  c3: string
+  c4: string
+  c5: string
+  c6: string
+  c7: string
+  c8: string
 }
 
 interface Colors {
@@ -154,6 +162,14 @@ ${stylesheet.join("\n\n")}
   --tertiary: ${theme.colors.lightMode.tertiary};
   --highlight: ${theme.colors.lightMode.highlight};
   --textHighlight: ${theme.colors.lightMode.textHighlight};
+  --c1: ${theme.colors.lightMode.c1};
+  --c2: ${theme.colors.lightMode.c2};
+  --c3: ${theme.colors.lightMode.c3};
+  --c4: ${theme.colors.lightMode.c4};
+  --c5: ${theme.colors.lightMode.c5};
+  --c6: ${theme.colors.lightMode.c6};
+  --c7: ${theme.colors.lightMode.c7};
+  --c8: ${theme.colors.lightMode.c8};
 
   --titleFont: "${getFontSpecificationName(theme.typography.title || theme.typography.header)}", ${DEFAULT_SANS_SERIF};
   --headerFont: "${getFontSpecificationName(theme.typography.header)}", ${DEFAULT_SANS_SERIF};
@@ -171,6 +187,14 @@ ${stylesheet.join("\n\n")}
   --tertiary: ${theme.colors.darkMode.tertiary};
   --highlight: ${theme.colors.darkMode.highlight};
   --textHighlight: ${theme.colors.darkMode.textHighlight};
+  --c1: ${theme.colors.darkMode.c1};
+  --c2: ${theme.colors.darkMode.c2};
+  --c3: ${theme.colors.darkMode.c3};
+  --c4: ${theme.colors.darkMode.c4};
+  --c5: ${theme.colors.darkMode.c5};
+  --c6: ${theme.colors.darkMode.c6};
+  --c7: ${theme.colors.darkMode.c7};
+  --c8: ${theme.colors.darkMode.c8};
 }
 `
 }

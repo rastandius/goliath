@@ -124,7 +124,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
   const neighbourhood = new Set<SimpleSlug>()
   const wl: (SimpleSlug | "__SENTINEL")[] = [slug, "__SENTINEL"]
-  if (depth >= 0) {
+  if (depth >= 0 && getFullSlug(window) !== "index") {
     while (depth >= 0 && wl.length > 0) {
       // compute neighbours
       const cur = wl.shift()!
@@ -184,6 +184,14 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     "--dark",
     "--darkgray",
     "--bodyFont",
+    "--c1",
+    "--c2",
+    "--c3",
+    "--c4",
+    "--c5",
+    "--c6",
+    "--c7",
+    "--c8",
   ] as const
   const computedStyleMap = cssVars.reduce(
     (acc, key) => {
@@ -198,6 +206,18 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const isCurrent = d.id === slug
     if (isCurrent) {
       return computedStyleMap["--secondary"]
+    } else if (/^Организации\//.test(d.id)) {
+      return computedStyleMap["--c4"];
+    } else if (d.tags.includes("race")) {
+      return computedStyleMap["--c1"];
+    } else if (d.tags.includes("city")) {
+      return computedStyleMap["--c6"];
+    } else if (d.tags.includes("player")) {
+      return computedStyleMap["--c8"];
+    } else if (/^Items\//.test(d.id)) {
+      return computedStyleMap["--c7"];
+    } else if (/^NPC\//.test(d.id)) {
+      return computedStyleMap["--c5"];
     } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
