@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Добро пожаловать в Голиаф
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+К сожалению карта с leaflet как и большинство плагинов не подлежит конвертации при хостинге. Что значит с ними я возможно что-то придумаю потом.
