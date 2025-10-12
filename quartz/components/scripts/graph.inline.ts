@@ -192,6 +192,8 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     "--c6",
     "--c7",
     "--c8",
+    "--c9",
+    "--c10",
   ] as const
   const computedStyleMap = cssVars.reduce(
     (acc, key) => {
@@ -205,24 +207,29 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const color = (d: NodeData) => {
     const isCurrent = d.id === slug
     if (isCurrent) {
-      console.log(d.id)
       return computedStyleMap["--secondary"]
     } else if (d.id.startsWith("Goliaph/NPCs/Организации/")) {
-      return computedStyleMap["--c4"];
+      return computedStyleMap["--c2"];
     } else if (d.tags.includes("race")) {
-      return computedStyleMap["--c1"];
-    } else if (d.tags.includes("city")) {
-      return computedStyleMap["--c6"];
-    } else if (d.tags.includes("player")) {
-      return computedStyleMap["--c8"];
-    } else if (d.id.startsWith("Goliaph/Items/")) {
       return computedStyleMap["--c7"];
-    } else if (d.id.startsWith("Goliaph/NPCs/")) {
+    } else if (d.tags.includes("city")) {
+      return computedStyleMap["--c3"];
+    } else if (d.id.startsWith("Goliaph/Локации/")) {
+      return computedStyleMap["--c4"];
+    } else if (d.tags.includes("player")) {
       return computedStyleMap["--c5"];
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
+    } else if (d.id.startsWith("Goliaph/Items/")) {
+      return computedStyleMap["--c6"];
+    } else if (d.id.startsWith("Goliaph/NPCs/")) {
+      return computedStyleMap["--c1"];
+    } else if (d.id.startsWith("Goliaph/Session-notes/")) {
+      return computedStyleMap["--c9"];
+    } else if (d.id.startsWith("Goliaph/mechanics/")) {
+      return computedStyleMap["--c10"];
+    }else if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
-      return computedStyleMap["--gray"]
+      return computedStyleMap["--c8"]
     }
   }
 

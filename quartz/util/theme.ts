@@ -16,6 +16,8 @@ export interface ColorScheme {
   c6: string
   c7: string
   c8: string
+  c9: string
+  c10: string
 }
 
 interface Colors {
@@ -170,6 +172,8 @@ ${stylesheet.join("\n\n")}
   --c6: ${theme.colors.lightMode.c6};
   --c7: ${theme.colors.lightMode.c7};
   --c8: ${theme.colors.lightMode.c8};
+  --c9: ${theme.colors.lightMode.c9};
+  --c10: ${theme.colors.lightMode.c10};
 
   --titleFont: "${getFontSpecificationName(theme.typography.title || theme.typography.header)}", ${DEFAULT_SANS_SERIF};
   --headerFont: "${getFontSpecificationName(theme.typography.header)}", ${DEFAULT_SANS_SERIF};
@@ -195,6 +199,8 @@ ${stylesheet.join("\n\n")}
   --c6: ${theme.colors.darkMode.c6};
   --c7: ${theme.colors.darkMode.c7};
   --c8: ${theme.colors.darkMode.c8};
+  --c9: ${theme.colors.darkMode.c9};
+  --c10: ${theme.colors.darkMode.c10};
 }
 `
 }
