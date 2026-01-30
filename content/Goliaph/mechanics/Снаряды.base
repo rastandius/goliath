@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.inFolder("content/Goliaph/mechanics/Снаряды")
+    - '!file.name.endsWith("снаряд")'
+    - file.name != "Бочка"
+    - file.name != "Скат"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - Урон по щитам
+      - Урон по парусам
+      - Урон по корпусу
+      - Урон по команде
+      - Стоимость
+      - Дальность
+      - Вес
+      - Свойства
+    sort:
+      - property: file.name
+        direction: ASC

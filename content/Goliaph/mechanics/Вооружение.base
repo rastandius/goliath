@@ -1,0 +1,31 @@
+filters:
+  and:
+    - file.hasLink("content/Goliaph/mechanics/Вооружение")
+formulas:
+  Untitled: ""
+  Стоимость: Стоимость
+  Дальность: Дальность
+  Угол: Угол
+  Урон: Урон
+  Нддв: Нддв
+  Свойства: Свойства.join("; ")
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - formula.Стоимость
+      - formula.Дальность
+      - formula.Угол
+      - formula.Урон
+      - formula.Нддв
+      - formula.Свойства
+    sort:
+      - property: formula.Стоимость
+        direction: ASC
+      - property: file.name
+        direction: DESC
+      - property: formula.Свойства
+        direction: DESC
+      - property: formula.Untitled
+        direction: ASC

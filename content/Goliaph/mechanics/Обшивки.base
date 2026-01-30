@@ -1,0 +1,21 @@
+filters:
+  and:
+    - file.inFolder("content/Goliaph/mechanics/Обшивка")
+formulas:
+  КД: КД
+  Скорость: Скорость
+  Скорость поворота: note["Скорость поворота"]
+  Броня: Броня
+  Стоимость: Стоимость
+  Свойства: note["Особое свойство"]
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - formula.КД
+      - formula.Скорость
+      - formula.Скорость поворота
+      - formula.Броня
+      - formula.Стоимость
+      - formula.Свойства

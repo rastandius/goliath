@@ -1,0 +1,46 @@
+filters:
+  and:
+    - file.inFolder("content/Goliaph/mechanics/виды кораблей")
+    - file.name != "Голиаф"
+formulas:
+  ХП: ХП
+  Экипаж: Экипаж
+  Размер: Размер
+  Модификации: Модификации
+  Грузоподъемность: Грузоподъемность
+  Скорость: Скорость
+  Скорость поворота: note["Скорость поворота"]
+  Маневреность: Манёвреность
+  Броня: Броня
+  Untitled: Стоимость
+  Минимальная раб. сила для постройки: note["Минимальная раб. сила для постройки"]
+  Субкласы: Субкласы
+properties:
+  formula.Untitled:
+    displayName: Стоимость
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - formula.ХП
+      - formula.Экипаж
+      - formula.Размер
+      - formula.Модификации
+      - formula.Грузоподъемность
+      - formula.Скорость
+      - formula.Скорость поворота
+      - formula.Маневреность
+      - formula.Броня
+      - formula.Untitled
+      - formula.Минимальная раб. сила для постройки
+      - formula.Субкласы
+    sort:
+      - property: formula.Размер
+        direction: ASC
+      - property: formula.Untitled
+        direction: DESC
+      - property: file.name
+        direction: ASC
+      - property: formula.Грузоподъемность
+        direction: DESC
