@@ -12,16 +12,21 @@ formulas:
   Маневреность: note["Манёвреность"]
   Броня: note["Броня"]
   Untitled: note["Стоимость"]
-  Минимальная раб. сила для постройки: note["Минимальная раб. сила для постройки"]
+  Минимальная раб. сила для постройки: note["Минимальная рабочая сила для постройки"]
   Субкласы: note["Субкласы"]
+  Untitled 2: link(file,file.name)
 properties:
   formula.Untitled:
     displayName: Стоимость
+  formula.Минимальная раб. сила для постройки:
+    displayName: Минимальная рабочая сила для постройки
+  formula.Untitled 2:
+    displayName: Тип корабля
 views:
   - type: table
     name: Table
     order:
-      - file.name
+      - formula.Untitled 2
       - formula.ХП
       - formula.Экипаж
       - formula.Размер
@@ -35,6 +40,12 @@ views:
       - formula.Минимальная раб. сила для постройки
       - formula.Субкласы
     sort:
+      - property: formula.Untitled 2
+        direction: DESC
+      - property: file.basename
+        direction: DESC
+      - property: formula.Минимальная раб. сила для постройки
+        direction: ASC
       - property: formula.Размер
         direction: ASC
       - property: formula.Untitled
@@ -43,3 +54,5 @@ views:
         direction: ASC
       - property: formula.Грузоподъемность
         direction: DESC
+    columnSize:
+      formula.Минимальная раб. сила для постройки: 70

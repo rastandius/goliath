@@ -8,15 +8,18 @@ formulas:
   Броня: note["Броня"]
   Стоимость: note["Стоимость"]
   Свойства: note["Особое свойство"]
+  Тип обшивки: link(file,file.name)
 views:
   - type: table
     name: Table
     order:
-      - file.name
+      - formula.Тип обшивки
       - formula.КД
       - formula.Скорость
       - formula.Скорость поворота
       - formula.Броня
       - formula.Стоимость
       - formula.Свойства
-    sort: []
+    sort:
+      - property: formula.Тип обшивки
+        direction: ASC

@@ -4,11 +4,13 @@ filters:
     - '!file.name.contains("снаряд")'
     - '!file.name.contains("Бочка")'
     - '!file.name.contains("Скат")'
+formulas:
+  Тип снаряда: link(file,file.name)
 views:
   - type: table
     name: Table
     order:
-      - file.name
+      - formula.Тип снаряда
       - Урон по щитам
       - Урон по парусам
       - Урон по корпусу
