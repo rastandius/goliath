@@ -1,7 +1,7 @@
 filters:
   and:
     - file.inFolder("Goliaph/mechanics/виды кораблей")
-    - file.name != "Голиаф"
+    - '!file.name.contains("Голиаф")'
 formulas:
   ХП: note["ХП"]
   Экипаж: note["Экипаж"]

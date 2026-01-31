@@ -1,9 +1,9 @@
 filters:
   and:
     - file.inFolder("Goliaph/mechanics/Снаряды")
-    - '!file.name.endsWith("снаряд")'
-    - file.name != "Бочка"
-    - file.name != "Скат"
+    - '!file.name.contains("снаряд")'
+    - '!file.name.contains("Бочка")'
+    - '!file.name.contains("Скат")'
 views:
   - type: table
     name: Table
