@@ -1,6 +1,6 @@
 filters:
   and:
-    - "!Субкласы.isEmpty()"
+    - file.hasProperty("ship")
 formulas:
   ХП: note["ХП"]
   Экипаж: note["Экипаж"]
