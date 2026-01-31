@@ -21,11 +21,11 @@ views:
       - formula.Нддв
       - formula.Свойства
     sort:
+      - property: formula.Свойства
+        direction: DESC
       - property: formula.Стоимость
         direction: ASC
       - property: file.name
-        direction: DESC
-      - property: formula.Свойства
         direction: DESC
       - property: formula.Untitled
         direction: ASC
