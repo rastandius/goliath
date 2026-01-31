@@ -9,15 +9,11 @@ formulas:
   Урон: note["Урон"]
   Нддв: note["Нддв"]
   Свойства: note["Свойства"].join("; ")
-  Untitled 2: link(file,file.name)
-properties:
-  formula.Untitled 2:
-    displayName: Название
 views:
   - type: table
     name: Table
     order:
-      - formula.Untitled 2
+      - file.name
       - formula.Стоимость
       - formula.Дальность
       - formula.Угол
@@ -29,5 +25,7 @@ views:
         direction: DESC
       - property: formula.Стоимость
         direction: ASC
+      - property: file.name
+        direction: DESC
       - property: formula.Untitled
         direction: ASC
