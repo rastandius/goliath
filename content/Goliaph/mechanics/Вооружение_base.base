@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.hasLink("content/Goliaph/mechanics/Вооружение")
+    - file.hasLink("Goliaph/mechanics/Вооружение")
 formulas:
   Untitled: ""
   Стоимость: Стоимость

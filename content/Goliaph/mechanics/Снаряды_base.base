@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("content/Goliaph/mechanics/Снаряды")
+    - file.inFolder("Goliaph/mechanics/Снаряды")
     - '!file.name.endsWith("снаряд")'
     - file.name != "Бочка"
     - file.name != "Скат"
