@@ -1,6 +1,6 @@
 filters:
   and:
-    - "!formula.Субкласы.isEmpty()"
+    - "!Субкласы.isEmpty()"
 formulas:
   ХП: note["ХП"]
   Экипаж: note["Экипаж"]
