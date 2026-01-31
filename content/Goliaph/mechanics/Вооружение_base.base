@@ -9,6 +9,7 @@ formulas:
   Урон: note["Урон"]
   Нддв: note["Нддв"]
   Свойства: note["Свойства"].join("; ")
+  Название: link(file,file.name)
 views:
   - type: table
     name: Table
@@ -20,6 +21,7 @@ views:
       - formula.Урон
       - formula.Нддв
       - formula.Свойства
+      - formula.Название
     sort:
       - property: formula.Свойства
         direction: DESC
