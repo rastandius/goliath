@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("content/Goliaph/mechanics/Обшивка")
+    - file.inFolder("Goliaph/mechanics/Обшивка")
 formulas:
   КД: note["КД"]
   Скорость: note["Скорость"]
