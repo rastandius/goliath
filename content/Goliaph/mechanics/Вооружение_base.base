@@ -9,7 +9,7 @@ formulas:
   Урон: note["Урон"]
   Нддв: note["Нддв"]
   Свойства: note["Свойства"].join("; ")
-  Название: link(file,file.name)
+  Название: link('/Вооружение/'+file.name,file.name.split('.')[0])
 views:
   - type: table
     name: Table
