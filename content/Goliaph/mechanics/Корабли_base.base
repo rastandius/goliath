@@ -14,7 +14,7 @@ formulas:
   Untitled: note["Стоимость"]
   Минимальная раб. сила для постройки: note["Минимальная раб. сила для постройки"]
   Субкласы: note["Субкласы"]
-  Класс: link('/Goliath/mechanics/виды-кораблей/'+file.name,file.name.split('.')[0])
+  Класс: link('/Goliaph/mechanics/Типы кораблей/'+file.name,file.name.split('.')[0])
 properties:
   formula.Untitled:
     displayName: Стоимость

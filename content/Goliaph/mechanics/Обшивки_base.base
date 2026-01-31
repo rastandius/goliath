@@ -8,7 +8,7 @@ formulas:
   Броня: note["Броня"]
   Стоимость: note["Стоимость"]
   Свойства: note["Особое свойство"]
-  Тип: link('/Goliath/mechanics/Обшивка/'+file.name,file.name.split('.')[0])
+  Тип: link('/Goliaph/mechanics/Обшивка/'+file.name,file.name.split('.')[0])
 views:
   - type: table
     name: Table

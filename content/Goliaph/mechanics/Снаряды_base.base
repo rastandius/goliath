@@ -5,7 +5,7 @@ filters:
     - '!file.name.contains("Бочка")'
     - '!file.name.contains("Скат")'
 formulas:
-  Тип: link('/Goliath/mechanics/Снаряды/'+file.name,file.name.split('.')[0])
+  Тип: link('/Goliaph/mechanics/Снаряды/'+file.name,file.name.split('.')[0])
 views:
   - type: table
     name: Table
