@@ -1,14 +1,14 @@
 filters:
   and:
-    - file.hasLink("Goliaph/mechanics/Вооружение")
+    - file.hasLink("Goliaph/mechanics/Вооружение.html")
 formulas:
   Untitled: ""
-  Стоимость: Стоимость
-  Дальность: Дальность
-  Угол: Угол
-  Урон: Урон
-  Нддв: Нддв
-  Свойства: Свойства.join("; ")
+  Стоимость: note["Стоимость"]
+  Дальность: note["Дальность"]
+  Угол: note["Угол"]
+  Урон: note["Урон"]
+  Нддв: note["Нддв"]
+  Свойства: note["Свойства"].join("; ")
 views:
   - type: table
     name: Table
