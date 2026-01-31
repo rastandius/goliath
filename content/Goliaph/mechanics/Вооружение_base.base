@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.hasLink("Goliaph/mechanics/Вооружение.html")
+    - file.inFolder("Goliaph/mechanics/Вооружение")
 formulas:
   Untitled: ""
   Стоимость: note["Стоимость"]
