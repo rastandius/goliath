@@ -9,19 +9,18 @@ formulas:
   Урон: note["Урон"]
   Нддв: note["Нддв"]
   Свойства: note["Свойства"].join("; ")
-  Название: link('/Вооружение/'+file.name,file.name.split('.')[0])
+  Название: link('/Goliath/mechanics/Вооружение/'+file.name,file.name.split('.')[0])
 views:
   - type: table
     name: Table
     order:
-      - file.name
+      - formula.Название
       - formula.Стоимость
       - formula.Дальность
       - formula.Угол
       - formula.Урон
       - formula.Нддв
       - formula.Свойства
-      - formula.Название
     sort:
       - property: formula.Свойства
         direction: DESC

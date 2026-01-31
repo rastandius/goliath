@@ -4,11 +4,13 @@ filters:
     - '!file.name.contains("снаряд")'
     - '!file.name.contains("Бочка")'
     - '!file.name.contains("Скат")'
+formulas:
+  Тип: link('/Goliath/mechanics/Снаряды/'+file.name,file.name.split('.')[0])
 views:
   - type: table
     name: Table
     order:
-      - file.name
+      - formula.Тип
       - Урон по щитам
       - Урон по парусам
       - Урон по корпусу

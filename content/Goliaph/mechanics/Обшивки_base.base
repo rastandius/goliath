@@ -8,11 +8,12 @@ formulas:
   Броня: note["Броня"]
   Стоимость: note["Стоимость"]
   Свойства: note["Особое свойство"]
+  Тип: link('/Goliath/mechanics/Обшивка/'+file.name,file.name.split('.')[0])
 views:
   - type: table
     name: Table
     order:
-      - file.name
+      - formula.Тип
       - formula.КД
       - formula.Скорость
       - formula.Скорость поворота
