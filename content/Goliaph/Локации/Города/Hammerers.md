@@ -1,3 +1,11 @@
+---
+marker:
+- mapName: MAP_WORLD
+  x: 440
+  y: 560
+  icon: game-icons:castle
+  colour: '0d9784'
+---
 #city 
 
 ![[hammerers.png]]

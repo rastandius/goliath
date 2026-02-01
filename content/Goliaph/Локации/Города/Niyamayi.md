@@ -1,3 +1,11 @@
+---
+marker:
+- mapName: MAP_WORLD
+  x: 380
+  y: 410
+  icon: game-icons:castle
+  colour: '0d9784'
+---
 #city 
 
 ![[Niyamayi.png]]

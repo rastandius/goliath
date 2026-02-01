@@ -1,3 +1,11 @@
+---
+marker:
+- mapName: MAP_WORLD
+  x: 610
+  y: 315
+  icon: game-icons:anvil-impact
+  colour: 'cc6f0b'
+---
 #city 
 
 ![[draurini.png]]

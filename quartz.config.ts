@@ -94,6 +94,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.ObsidianBases(),
+      Plugin.LeafletMap(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
